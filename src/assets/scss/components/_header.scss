@@ -1,0 +1,18 @@
+@import '@/assets/scss/variables/media';
+@import '@/assets/scss/variables/classes';
+
+#{$header} {
+
+}
+
+@media (max-width: #{$mediaMD}) {
+  #{$header} {
+
+  }
+}
+
+@media (max-width: #{$mediaSM}) {
+  #{$header} {
+
+  }
+}

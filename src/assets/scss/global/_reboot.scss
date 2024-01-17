@@ -1,0 +1,155 @@
+@import '@/assets/scss/variables/media';
+@import '@/assets/scss/variables/classes';
+@import '@/assets/scss/variables/colors';
+
+.tmpl-hh-wrapper {
+  box-shadow: 1px 1px 15px #000;
+}
+
+.hht-vacancydescription {
+  padding: 0 !important;
+}
+
+.vacancy-branded-user-content {
+  ul,
+  ol {
+    margin-left: 0;
+  }
+
+  p {
+    margin-top: 0 !important;
+
+    &:first-child {
+      b,
+      strong {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+#{$wrapper} {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 690px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: $black;
+  line-height: 1.4;
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  sup {
+    vertical-align: top;
+  }
+}
+
+#{$content} {
+  ol,
+  ul {
+    li {
+      p {
+        margin: 0 !important;
+
+        b,
+        strong {
+          font-weight: 700;
+          font-size: inherit !important;
+          margin: 0 !important;
+          text-transform: none;
+          color: inherit !important;
+          display: initial;
+        }
+      }
+
+      em {
+        font-style: normal !important;
+
+        b,
+        strong {
+          text-transform: none;
+          display: inherit;
+          font-weight: 700;
+          font-size: inherit;
+          color: inherit;
+          font-style: normal !important;
+        }
+      }
+
+      b,
+      strong {
+        font-weight: 700;
+        font-size: inherit !important;
+        margin: 0 !important;
+        text-transform: none;
+        color: inherit !important;
+      }
+    }
+  }
+
+  p {
+    margin-bottom: 16px;
+
+    b,
+    strong {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.2;
+      color: $black;
+      margin-top: 30px !important;
+    }
+
+    em {
+      font-style: normal !important;
+
+      b,
+      strong {
+        text-transform: none;
+        display: inherit;
+        font-weight: 700;
+        font-size: inherit;
+        color: inherit !important;
+        font-style: normal !important;
+        background: transparent;
+        padding: 0;
+      }
+    }
+
+    &:first-child {
+      b,
+      strong {
+        margin-top: 0 !important;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .l-paddings {
+    padding: 0;
+  }
+}
+
+@media (max-width: #{$mediaMD}) {
+  #{$wrapper} {
+    max-width: 610px;
+  }
+
+}
+
+@media (max-width: #{$mediaSM}) {
+  #{$wrapper} {
+
+  }
+}

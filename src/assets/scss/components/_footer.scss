@@ -1,0 +1,19 @@
+@import '@/assets/scss/variables/media';
+@import '@/assets/scss/variables/classes';
+@import '@/assets/scss/variables/colors';
+
+#{$footer} {
+
+}
+
+@media (max-width: #{$mediaMD}) {
+  #{$footer} {
+
+  }
+}
+
+@media (max-width: #{$mediaSM}) {
+  #{$footer} {
+
+  }
+}
