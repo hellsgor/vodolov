@@ -4,6 +4,7 @@
 
 .tmpl-hh-wrapper {
   box-shadow: 1px 1px 15px #000;
+  border-radius: 4px;
 }
 
 .hht-vacancydescription {
@@ -37,7 +38,7 @@
   font-family: 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   color: $black;
   line-height: 1.4;
 
@@ -150,6 +151,6 @@
 
 @media (max-width: #{$mediaSM}) {
   #{$wrapper} {
-
+    max-width: unset;
   }
 }
