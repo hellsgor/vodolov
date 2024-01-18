@@ -11,24 +11,38 @@
 
   & > div {
     border-radius: 12px;
+    overflow: hidden;
   }
 
   &__about {
-    $text-color: $white;
     background-color: $primary;
-    color: $text-color;
 
     p {
       margin-bottom: 10px;
-    }
-
-    p strong {
-      color: $text-color;
     }
   }
 
   &__description {
     background-color: $white;
+  }
+
+  &__resources,
+  .resources {
+    display: flex;
+    column-gap: 10px;
+    background-color: $primary;
+    width: 100%;
+
+    &__text {
+      padding: 30px;
+    }
+
+    img {
+      max-width: 50%;
+      width: 100%;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+    }
   }
 
   ul,
@@ -56,6 +70,15 @@
         height: 1px;
         background: $black;
       }
+    }
+  }
+
+  .white-text {
+    $text-color: $white;
+
+    p,
+    p strong {
+      color: $text-color;
     }
   }
 }
