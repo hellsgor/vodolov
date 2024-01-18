@@ -3,7 +3,16 @@
 @import '@/assets/scss/variables/colors';
 
 #{$footer} {
+  padding: 27px 50px;
+  background-color: $primary;
+  color: $white;
 
+  & > p {
+    max-width: 405px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
 }
 
 @media (max-width: #{$mediaMD}) {
@@ -14,6 +23,6 @@
 
 @media (max-width: #{$mediaSM}) {
   #{$footer} {
-
+    padding: 20px 16px;
   }
 }
