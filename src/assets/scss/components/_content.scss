@@ -15,6 +15,7 @@
   }
 
   &__about {
+    padding: 36px;
     background-color: $primary;
 
     p {
@@ -22,18 +23,18 @@
     }
   }
 
-  &__description {
+  &__content-hh {
+    padding: 36px;
     background-color: $white;
   }
 
-  &__resources,
-  .resources {
+  &__resources {
     display: flex;
     width: 100%;
     background-color: $primary;
     gap: 10px;
 
-    &__text {
+    &-text {
       padding: 30px;
     }
 
@@ -45,20 +46,20 @@
     }
   }
 
-  &__principles,
-  .principles {
-    &__wrapper {
+
+  &__principles {
+    &-wrapper {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
     }
 
-    &__item {
+    &-item {
       display: flex;
       overflow: hidden;
       height: 120px;
       border-radius: 12px;
-      flex: 0 0 199px;
+      flex: 1 0 199px;
       align-items: center;
       justify-content: center;
       background-color: $white;
@@ -131,7 +132,7 @@
     padding: 40px 20px;
 
     .principles {
-      &__item {
+      &-item {
         flex: 1 1 183px;
 
         &_big {
@@ -147,14 +148,14 @@
     padding: 30px 16px;
     row-gap: 30px;
 
-    .l-paddings {
+    &__content-hh {
       padding: 30px 16px;
     }
 
-    .resources {
+    &__resources {
       flex-direction: column;
 
-      &__text {
+      &-text {
         padding: 30px 16px 14px;
       }
 
@@ -164,14 +165,14 @@
       }
     }
 
-    .principles {
-      &__wrapper {
+    &__principles {
+      &-wrapper {
         gap: 6px;
       }
 
-      &__item {
+      &-item {
         height: 100px;
-        flex-basis: 126px;
+        flex: 1 0 126px;
 
         & > p {
           padding: 16px 8px;
