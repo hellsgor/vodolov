@@ -3,8 +3,8 @@
 @import '@/assets/scss/variables/colors';
 
 .tmpl-hh-wrapper {
-  box-shadow: 1px 1px 15px #000;
   border-radius: 4px;
+  box-shadow: 1px 1px 15px #000;
 }
 
 .hht-vacancydescription {
@@ -30,17 +30,17 @@
 }
 
 #{$wrapper} {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 690px;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  max-width: 690px;
+  margin: 0 auto;
   font-family: 'Arial', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  color: $black;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.4;
+  color: $black;
 
   * {
     box-sizing: border-box;
@@ -62,12 +62,12 @@
 
         b,
         strong {
-          font-weight: 700;
-          font-size: inherit !important;
+          display: initial;
           margin: 0 !important;
+          font-size: inherit !important;
+          font-weight: 700;
           text-transform: none;
           color: inherit !important;
-          display: initial;
         }
       }
 
@@ -76,20 +76,20 @@
 
         b,
         strong {
-          text-transform: none;
           display: inherit;
-          font-weight: 700;
           font-size: inherit;
-          color: inherit;
+          font-weight: 700;
           font-style: normal !important;
+          text-transform: none;
+          color: inherit;
         }
       }
 
       b,
       strong {
-        font-weight: 700;
-        font-size: inherit !important;
         margin: 0 !important;
+        font-size: inherit !important;
+        font-weight: 700;
         text-transform: none;
         color: inherit !important;
       }
@@ -102,11 +102,11 @@
     b,
     strong {
       display: inline-block;
-      font-weight: 700;
+      margin-top: 30px !important;
       font-size: 24px;
+      font-weight: 700;
       line-height: 1.25;
       color: $black;
-      margin-top: 30px !important;
     }
 
     em {
@@ -114,14 +114,14 @@
 
       b,
       strong {
-        text-transform: none;
         display: inherit;
-        font-weight: 700;
-        font-size: inherit;
-        color: inherit !important;
-        font-style: normal !important;
-        background: transparent;
         padding: 0;
+        font-size: inherit;
+        font-weight: 700;
+        font-style: normal !important;
+        text-transform: none;
+        background: transparent;
+        color: inherit !important;
       }
     }
 
@@ -146,11 +146,20 @@
   #{$wrapper} {
     max-width: 610px;
   }
-
 }
 
 @media (max-width: #{$mediaSM}) {
   #{$wrapper} {
     max-width: unset;
+  }
+
+  #{$content} {
+    p {
+      b,
+      strong {
+        font-size: 20px;
+        line-height: 1.3;
+      }
+    }
   }
 }
