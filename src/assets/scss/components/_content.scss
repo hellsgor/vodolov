@@ -3,15 +3,15 @@
 @import '@/assets/scss/variables/colors';
 
 #{$content} {
-  padding: 36px;
   display: flex;
+  padding: 36px;
   flex-direction: column;
-  row-gap: 36px;
   background-color: $main-background;
+  row-gap: 36px;
 
   & > div {
-    border-radius: 12px;
     overflow: hidden;
+    border-radius: 12px;
   }
 
   &__about {
@@ -29,19 +29,61 @@
   &__resources,
   .resources {
     display: flex;
+    width: 100%;
     column-gap: 10px;
     background-color: $primary;
-    width: 100%;
 
     &__text {
       padding: 30px;
     }
 
     img {
-      max-width: 50%;
       width: 100%;
+      max-width: 50%;
       border-top-left-radius: 12px;
       border-bottom-left-radius: 12px;
+    }
+  }
+
+  &__principles,
+  .principles {
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    &__item {
+      display: flex;
+      overflow: hidden;
+      height: 120px;
+      border-radius: 12px;
+      flex: 0 0 199px;
+      align-items: center;
+      justify-content: center;
+      background-color: $white;
+
+      & > p {
+        padding: 30px 20px;
+        font-size: 14px;
+        line-height: 1.42857;
+        color: $primary;
+
+        & > b {
+          font-size: inherit !important;
+          color: inherit !important;
+        }
+      }
+
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &_big {
+        flex-basis: 304px;
+      }
     }
   }
 
@@ -50,12 +92,12 @@
     margin-left: 0;
 
     li {
-      list-style: none;
       position: relative;
       padding-left: 22px;
-      color: $black;
-      line-height: 1.375;
       font-size: 16px;
+      list-style: none;
+      line-height: 1.375;
+      color: $black;
 
       &:not(:last-child) {
         margin-bottom: 8px;
@@ -65,10 +107,10 @@
         position: absolute;
         top: 11px;
         left: 2px;
-        content: '';
         width: 14px;
         height: 1px;
         background: $black;
+        content: '';
       }
     }
   }
