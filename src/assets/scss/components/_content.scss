@@ -3,7 +3,33 @@
 @import '@/assets/scss/variables/colors';
 
 #{$content} {
-  padding: 40px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 36px;
+  background-color: $main-background;
+
+  & > div {
+    border-radius: 12px;
+  }
+
+  &__about {
+    $text-color: $white;
+    background-color: $primary;
+    color: $text-color;
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    p strong {
+      color: $text-color;
+    }
+  }
+
+  &__description {
+    background-color: $white;
+  }
 
   ul,
   ol {
@@ -12,23 +38,22 @@
     li {
       list-style: none;
       position: relative;
-      padding-left: 21px;
+      padding-left: 22px;
       color: $black;
-      line-height: 1.4;
-      font-size: 14px;
+      line-height: 1.375;
+      font-size: 16px;
 
       &:not(:last-child) {
-        margin-bottom: 10px;
+        margin-bottom: 8px;
       }
 
       &::before {
         position: absolute;
-        top: 7px;
+        top: 11px;
         left: 2px;
         content: '';
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
+        width: 14px;
+        height: 1px;
         background: $black;
       }
     }
